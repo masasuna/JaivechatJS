@@ -141,12 +141,12 @@ export const Bot = (props: BotProps & { class?: string }) => {
 
   onMount(() => {
     // Check if the chat UI should be visible based on the domain
-    const allowedDomain = 'mit45-chatbot-demo.onrender.com';
-    if (window.location.hostname === allowedDomain) {
-      setIsChatUiVisible(true);
-    } else {
-      setIsChatUiVisible(false);
-    }
+    // const allowedDomain = 'mit45-chatbot-demo.onrender.com';
+    // if (window.location.hostname === allowedDomain) {
+    //   setIsChatUiVisible(true);
+    // } else {
+    //   setIsChatUiVisible(false);
+    // }
 
     // This part ensures the chat container scrolls to the bottom
     if (!bottomSpacer) return;
