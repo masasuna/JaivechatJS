@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Monk Chatbot Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .screenshot {
+            width: 100%;
+            height: 100vh;
+            overflow-y: scroll;
+        }
+
+        .screenshot img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="screenshot">
+        <img src="goldenmonk_screenshot.png" alt="Website Screenshot">
+    </div>
+    <!-- <div id="helpPopup">
+    Need any help? Click the chat icon below.
+    <span id="closeHelpPopup" style="margin-left: 10px; cursor: pointer;">&times;</span>
+    </div> -->
+
+
+<script type="module">
+  import Chatbot from "./dist/web.js";
+  Chatbot.init({
+    chatflowid: "535fc5dd-6ce0-4525-a708-e58f666d8fa3",
+    apiHost: "https://colloqui.jaive.co",
+    theme: {
+      button: { backgroundColor: "#86bd42", right: 60, bottom: 60, size: "medium", iconColor: "white" },
+      chatWindow: {
+        title: "Golden Monk Chat",
+        welcomeMessage: "Hi, I'm Casper, your go-to AI Kratom guide. Questions about strains or our products? I’m here to help - just ask or click one of the buttons to start chatting with me!",
+        botMessage: { backgroundColor: "#f3a02c", textColor: "#ffffff", showAvatar: true, avatarSrc: "https://raw.githubusercontent.com/masasuna/public_img/main/goldenmonk_icon.png" },
+        userMessage: { backgroundColor: "#75c157" },
+        textInput: { placeholder: "Please enter your question here", backgroundColor: "#FFFCD2" }
+      }
+    }
+  });
+</script>
+
+
+</body>
+
+</html>
